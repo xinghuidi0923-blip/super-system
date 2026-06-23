@@ -1,0 +1,13 @@
+# 自动旅游短片生成器依赖
+#
+# 说明：
+# - moviepy 1.0.3 是最稳定、教程最多的版本；以下固定的版本组合
+#   专门规避了 Windows 上最常见的两个坑：
+#     * Pillow>=10 删除了 Image.ANTIALIAS，会导致 moviepy resize 报错 -> 固定 <10
+#     * numpy>=2 与 moviepy 1.0.3 不兼容 -> 固定 <2
+# - imageio-ffmpeg 会自动下载并管理 ffmpeg，无需手动安装 FFmpeg。
+
+moviepy==1.0.3
+imageio-ffmpeg>=0.4.9
+numpy>=1.21,<2.0
+Pillow>=9.5,<10.0
