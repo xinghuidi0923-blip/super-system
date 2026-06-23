@@ -1,5 +1,14 @@
 output/*
 !output/.gitkeep
+
+# 用户素材不纳入版本库（避免误传个人照片/视频），仅保留占位文件
+input/videos/*
+input/photos/*
+input/music/*
+!input/videos/.gitkeep
+!input/photos/.gitkeep
+!input/music/.gitkeep
+
 __pycache__/
 *.pyc
 _temp_audio*
